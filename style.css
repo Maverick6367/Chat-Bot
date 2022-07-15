@@ -40,7 +40,7 @@
 }
 
 .chat-bot-container {
-    height: 50vh;
+    height: 380px;
     width: 270px;
     position: absolute;
     display: flex;
@@ -62,7 +62,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-    height: 5vh;
+    height: 60px;
     background-color: #0eb869;
     color: white;
     transition: opacity 3s ease;
@@ -80,7 +80,7 @@
 .chat-box {
 
     padding: 5px 5px 0px 5px;
-    height: 39vh;
+    height: 270px;
     overflow: auto;
     background-image: url(./chatbg.png);
     background-size: cover;
@@ -100,7 +100,7 @@
 
 .send-box {
 
-    height: 6vh;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -237,6 +237,14 @@
 @media only screen and (max-width: 450px) {
     .chat-bot-container {
         width: 100%;
+    }
+
+
+
+}
+@media only screen and (max-height: 390px) {
+    .chat-bot-container {
+        height: 90vh;
     }
 
 
