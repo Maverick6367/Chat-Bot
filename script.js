@@ -14,7 +14,7 @@ let botCurrentTime = document.getElementById('currentTimeBot');
 
 
 downbutton.addEventListener('click', () => {
-    chatBotContainer.style.height = '5vh';
+    chatBotContainer.style.height = '50px';
     sendBox.style.display = 'none';
     chatPlace.style.display = 'none';
     chatHead.style.opacity = 0.6;
@@ -25,7 +25,7 @@ downbutton.addEventListener('click', () => {
 })
 upbutton.addEventListener('click', () => {
     chatHead.style.opacity = 1;
-    chatBotContainer.style.height = '50vh';
+    chatBotContainer.style.height = '300px';
     sendBox.style.display = 'flex';
     chatPlace.style.display = 'block';
     downbutton.style.display = 'block';
