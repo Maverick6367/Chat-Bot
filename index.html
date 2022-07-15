@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Bot</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 id="siteLogo">Website.com</h1>
+    </nav>
+    <section id="landingSection">
+        <h1>You can try asking these to ChatBot :-</h1>
+        <ul id="tutList" style="list-style: none;">
+            <li class="tut-items">hello, thanks, bye, hi</li>
+            <li class="tut-items">You can Tell Bot your name by typing "my name is (your Name)"</li>
+            <li class="tut-items">Ask back your name by typing "what is my name"</li>
+            <li class="tut-items">Are you human ?</li>
+            <li class="tut-items">What day is today ?</li>
+            <li class="tut-items">Who is your mother ?</li>
+            <li class="tut-items">Where do you live ?</li>
+            <li class="tut-items">What should i ask you ?</li>
+            
+            
+        </ul>
+    </section>
+
+    <div class="chat-bot-container">
+        <div class="chat-bot-head">WhatsApp Bot <div class="window-icons">
+            
+            
+            <i class="fa-solid fa-angle-down" id="downBtn" style="cursor: pointer; "></i>
+            
+            
+            <i class="fa-solid fa-angle-up" id="upBtn" style="cursor: pointer; display: none;"></i>
+        </div>
+    </div>
+    
+    
+    <div class="chat-box">
+        </div>
+        <div class="send-box">
+            <input type="text" id="message-input" placeholder="Type a message" autocomplete="off">
+            <button id="send-btn"><img id="sendbtn" src="./send-icon.png" alt="sendBtn"></button>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

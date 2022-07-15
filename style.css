@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito:wght@200&display=swap');
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    height: 10vh;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+}
+#tutList{
+
+    font-style: italic;
+}
+.tut-items{
+    margin-top: 3vh;
+}
+
+#landingSection {
+    width: 100%;
+    height: 90vh;
+    overflow-y: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./body-bg.jpg);
+    background-size: cover;
+    display: flex;
+    padding-top: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    color: white;
+    flex-direction: column;
+
+}
+
+.chat-bot-container {
+    height: 50vh;
+    width: 270px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    right: 0;
+    color: white;
+    padding: 1.5px;
+    transition: height 0.3s ease-in-out;
+    z-index: 999;
+
+}
+
+.chat-bot-head {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 5vh;
+    background-color: #0eb869;
+    color: white;
+    transition: opacity 3s ease;
+
+
+}
+
+.window-icons {
+    display: flex;
+    width: 30px;
+    align-self: center;
+    justify-content: space-around;
+}
+
+.chat-box {
+
+    padding: 5px 5px 0px 5px;
+    height: 39vh;
+    overflow: auto;
+    background-image: url(./chatbg.png);
+    background-size: cover;
+    width: 100%;
+
+
+}
+
+.minimize {
+    cursor: pointer;
+}
+
+#sendbtn {
+    height: 22px;
+    transform: rotate(42deg);
+}
+
+.send-box {
+
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(210, 210, 210);
+    padding: 4px;
+
+}
+
+#message-input {
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-radius: 3px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+}
+
+::placeholder {
+    color: rgb(154, 154, 154);
+}
+
+#send-btn {
+
+    width: 15%;
+    height: 100%;
+    border: none;
+    background-color: rgb(210, 210, 210);
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+.message-chat {
+    min-width: 100px;
+    width: auto;
+    max-width: 175px;
+    min-height: 40px;
+    font-size: 13px;
+    padding: 10px 10px 10px 10px;
+    height: auto;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    word-wrap: break-word;
+    hyphens: auto;
+    border-radius: 5px;
+    color: black;
+    clear: both;
+    position: relative;
+
+
+}
+
+.left-chat-box {
+
+    background-image: linear-gradient(45deg, white, white);
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.dots {
+    position: absolute;
+    transition: top 0.4s ease;
+
+}
+
+#first-dot {
+    top: 4px;
+    left: 30px;
+}
+
+#second-dot {
+    top: 4px;
+    left: 45px;
+}
+
+#third-dot {
+    top: 4px;
+    left: 60px;
+}
+
+.loadChat {
+
+
+    background-color: white;
+    min-height: 30px;
+    float: left;
+    margin-top: 8px;
+    justify-content: center;
+    gap: 6px;
+    display: inline-flex;
+    margin-bottom: 8px;
+
+
+
+}
+
+.right-chat-box {
+
+    background-image: linear-gradient(45deg, #bcfc8c, #bcfc8c);
+    float: right;
+    margin-top: 5px;
+
+}
+
+.currentTime {
+    font-size: 9px;
+    margin-top: 20px;
+    color: rgb(30, 30, 30);
+    position: absolute;
+    right: 4px;
+    bottom: 2px;
+}
+
+#copyEmail {
+
+    transition: border 0.5s ease;
+    padding: 1px;
+    margin-top: 5px;
+}
+
+#listOfQues {
+    list-style-position: inside;
+}
+
+@media only screen and (max-width: 450px) {
+    .chat-bot-container {
+        width: 100%;
+    }
+
+
+
+}
