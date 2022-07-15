@@ -213,8 +213,9 @@ const responseCheck = (question) => {
     else if(question.includes('where do you live') || question.includes(`your address`)){
         return "I live in clouds :)";
     }
-
-
+    else if(question.includes('how are you') || question.includes('how about you')){
+        return "I am learning and doing great";
+    }
     else if(question.includes('what should i ask you') || question.includes("what thing you know")){
         return `<ul id="listOfQues"> <li><i>where do you live</li><br><li>who made you</li><br> <li>what day is today</li><br><li>you can also tell me your name just by typing "my name is (your name)"</li><br><li>you can also suggest my creater about more question at <b>mohit4bug@gmail.com<b> <button title="copy" id="copyEmail"><i class="fa-solid fa-copy"></i></button></i></ul>`;
     }
